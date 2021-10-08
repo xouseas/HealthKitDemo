@@ -1,0 +1,333 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.huawei.healthkit.demo"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+11-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:5:5-79
+11-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:6:5-79
+12-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+13-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:7:5-74
+13-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:7:22-71
+14    <uses-permission android:name="android.permission.BLUETOOTH" />
+14-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:8:5-68
+14-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:8:22-65
+15    <uses-permission android:name="android.permission.BODY_SENSORS" />
+15-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:9:5-71
+15-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:9:22-68
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:11:5-79
+16-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:11:22-76
+17    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+17-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:12:5-77
+17-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:12:22-74
+18    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+18-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:13:5-95
+18-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:13:22-92
+19    <uses-permission android:name="android.permission.WAKE_LOCK" />
+19-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:14:5-68
+19-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:14:22-65
+20    <uses-permission android:name="android.permission.INTERNET" />
+20-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:15:5-66
+20-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:15:22-64
+21
+22    <!-- 如果是安卓8.0，应用编译配置的targetSdkVersion>=26，请务必添加以下权限 -->
+23    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- 应用市场9.0版本必须使用该权限获取用户的服务地 -->
+23-->[com.huawei.hms:availableupdate:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\57e1d0d2eaa712375191be65ba4a4ff9\availableupdate-5.2.0.300\AndroidManifest.xml:14:5-83
+23-->[com.huawei.hms:availableupdate:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\57e1d0d2eaa712375191be65ba4a4ff9\availableupdate-5.2.0.300\AndroidManifest.xml:14:22-80
+24    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
+24-->[com.huawei.hms:availableupdate:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\57e1d0d2eaa712375191be65ba4a4ff9\availableupdate-5.2.0.300\AndroidManifest.xml:16:5-106
+24-->[com.huawei.hms:availableupdate:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\57e1d0d2eaa712375191be65ba4a4ff9\availableupdate-5.2.0.300\AndroidManifest.xml:16:22-103
+25
+26    <application
+26-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:17:5-50:19
+27        android:name="androidx.multidex.MultiDexApplication"
+28        android:allowBackup="true"
+28-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:18:9-35
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.1.0] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:24:18-86
+30        android:debuggable="true"
+31        android:icon="@mipmap/ic_launcher"
+31-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:19:9-43
+32        android:label="@string/app_name"
+32-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:20:9-41
+33        android:roundIcon="@mipmap/ic_launcher_round"
+33-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:21:9-54
+34        android:supportsRtl="true"
+34-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:22:9-35
+35        android:testOnly="true"
+36        android:theme="@style/AppTheme" >
+36-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:23:9-40
+37        <meta-data
+37-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:25:9-27:35
+38            android:name="com.huawei.hms.client.appid"
+38-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:26:13-55
+39            android:value="2.2" />
+39-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:27:13-32
+40
+41        <activity android:name="com.huawei.demo.health.HealthKitMainActivity" >
+41-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:29:9-36:20
+41-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:29:19-78
+42            <intent-filter>
+42-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:30:13-35:29
+43                <action android:name="android.intent.action.VIEW" />
+43-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:31:17-69
+43-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:31:25-66
+44                <action android:name="android.intent.action.MAIN" />
+44-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:32:17-69
+44-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:32:25-66
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:34:17-77
+46-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:34:27-74
+47            </intent-filter>
+48        </activity>
+49        <activity android:name="com.huawei.demo.health.HealthKitDataControllerActivity" />
+49-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:38:9-91
+49-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:38:19-88
+50        <activity android:name="com.huawei.demo.health.HealthKitAutoRecorderControllerActivity" />
+50-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:39:9-99
+50-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:39:19-96
+51        <activity android:name="com.huawei.demo.health.HealthKitActivityRecordControllerActivity" />
+51-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:40:9-101
+51-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:40:19-98
+52        <activity android:name="com.huawei.demo.health.HealthKitSettingControllerActivity" />
+52-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:41:9-94
+52-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:41:19-91
+53        <activity android:name="com.huawei.demo.health.auth.HealthKitAuthActivity" />
+53-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:42:9-86
+53-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:42:19-83
+54        <activity android:name="com.huawei.demo.health.HealthKitHealthRecordControllerActivity" />
+54-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:43:9-99
+54-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:43:19-96
+55
+56        <service android:name="com.huawei.demo.health.PersistService" >
+56-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:45:9-49:19
+56-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:45:18-70
+57            <intent-filter android:priority="1000" >
+57-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:46:13-48:29
+57-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:46:28-51
+58                <action android:name="HealthKitService" />
+58-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:47:17-59
+58-->D:\Workspace\Android\hms-health-demo-java-master\src\app\src\main\AndroidManifest.xml:47:25-56
+59            </intent-filter>
+60        </service>
+61
+62        <activity
+62-->[com.huawei.hms:health:6.0.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\fdee99f6f9ed2a8be262adcfcb412362\health-6.0.0.300\AndroidManifest.xml:12:9-15:75
+63            android:name="com.huawei.hms.hihealth.activity.HealthKitAuthHubActivity"
+63-->[com.huawei.hms:health:6.0.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\fdee99f6f9ed2a8be262adcfcb412362\health-6.0.0.300\AndroidManifest.xml:13:13-85
+64            android:exported="false"
+64-->[com.huawei.hms:health:6.0.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\fdee99f6f9ed2a8be262adcfcb412362\health-6.0.0.300\AndroidManifest.xml:14:13-37
+65            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+65-->[com.huawei.hms:health:6.0.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\fdee99f6f9ed2a8be262adcfcb412362\health-6.0.0.300\AndroidManifest.xml:15:13-72
+66        <activity
+66-->[com.huawei.hms:health:6.0.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\fdee99f6f9ed2a8be262adcfcb412362\health-6.0.0.300\AndroidManifest.xml:16:9-18:40
+67            android:name="com.huawei.hms.hihealth.activity.HealthKitWebViewActivity"
+67-->[com.huawei.hms:health:6.0.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\fdee99f6f9ed2a8be262adcfcb412362\health-6.0.0.300\AndroidManifest.xml:17:13-85
+68            android:exported="false" />
+68-->[com.huawei.hms:health:6.0.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\fdee99f6f9ed2a8be262adcfcb412362\health-6.0.0.300\AndroidManifest.xml:18:13-37
+69        <activity
+69-->[com.huawei.hms:health:6.0.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\fdee99f6f9ed2a8be262adcfcb412362\health-6.0.0.300\AndroidManifest.xml:19:9-22:75
+70            android:name="com.huawei.hms.hihealth.activity.HealthKitTransparentActivity"
+70-->[com.huawei.hms:health:6.0.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\fdee99f6f9ed2a8be262adcfcb412362\health-6.0.0.300\AndroidManifest.xml:20:13-89
+71            android:exported="false"
+71-->[com.huawei.hms:health:6.0.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\fdee99f6f9ed2a8be262adcfcb412362\health-6.0.0.300\AndroidManifest.xml:21:13-37
+72            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+72-->[com.huawei.hms:health:6.0.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\fdee99f6f9ed2a8be262adcfcb412362\health-6.0.0.300\AndroidManifest.xml:22:13-72
+73
+74        <meta-data
+74-->[com.huawei.hms:health:6.0.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\fdee99f6f9ed2a8be262adcfcb412362\health-6.0.0.300\AndroidManifest.xml:24:9-26:55
+75            android:name="com.huawei.hms.client.service.name:hihealth-base"
+75-->[com.huawei.hms:health:6.0.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\fdee99f6f9ed2a8be262adcfcb412362\health-6.0.0.300\AndroidManifest.xml:25:13-76
+76            android:value="hihealth-base:6.0.0.300" />
+76-->[com.huawei.hms:health:6.0.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\fdee99f6f9ed2a8be262adcfcb412362\health-6.0.0.300\AndroidManifest.xml:26:13-52
+77        <meta-data
+77-->[com.huawei.hms:health:6.0.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\fdee99f6f9ed2a8be262adcfcb412362\health-6.0.0.300\AndroidManifest.xml:27:9-29:33
+78            android:name="com.huawei.hms.min_api_level:hihealth-base:hihealth"
+78-->[com.huawei.hms:health:6.0.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\fdee99f6f9ed2a8be262adcfcb412362\health-6.0.0.300\AndroidManifest.xml:28:13-79
+79            android:value="8" />
+79-->[com.huawei.hms:health:6.0.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\fdee99f6f9ed2a8be262adcfcb412362\health-6.0.0.300\AndroidManifest.xml:29:13-30
+80
+81        <activity
+81-->[com.huawei.hms:hwid:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\7419266a4b321e064c3b332073e0f170\hwid-5.2.0.300\AndroidManifest.xml:10:9-16:20
+82            android:name="com.huawei.hms.hwid.internal.ui.activity.HwIdSignInHubActivity"
+82-->[com.huawei.hms:hwid:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\7419266a4b321e064c3b332073e0f170\hwid-5.2.0.300\AndroidManifest.xml:11:13-90
+83            android:configChanges="fontScale|uiMode"
+83-->[com.huawei.hms:hwid:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\7419266a4b321e064c3b332073e0f170\hwid-5.2.0.300\AndroidManifest.xml:12:13-53
+84            android:excludeFromRecents="true"
+84-->[com.huawei.hms:hwid:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\7419266a4b321e064c3b332073e0f170\hwid-5.2.0.300\AndroidManifest.xml:13:13-46
+85            android:exported="false"
+85-->[com.huawei.hms:hwid:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\7419266a4b321e064c3b332073e0f170\hwid-5.2.0.300\AndroidManifest.xml:14:13-37
+86            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+86-->[com.huawei.hms:hwid:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\7419266a4b321e064c3b332073e0f170\hwid-5.2.0.300\AndroidManifest.xml:15:13-72
+87        </activity>
+88        <activity
+88-->[com.huawei.hms:hwid:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\7419266a4b321e064c3b332073e0f170\hwid-5.2.0.300\AndroidManifest.xml:17:9-22:20
+89            android:name="com.huawei.hms.account.internal.ui.activity.AccountSignInHubActivity"
+89-->[com.huawei.hms:hwid:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\7419266a4b321e064c3b332073e0f170\hwid-5.2.0.300\AndroidManifest.xml:18:13-96
+90            android:excludeFromRecents="true"
+90-->[com.huawei.hms:hwid:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\7419266a4b321e064c3b332073e0f170\hwid-5.2.0.300\AndroidManifest.xml:19:13-46
+91            android:exported="false"
+91-->[com.huawei.hms:hwid:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\7419266a4b321e064c3b332073e0f170\hwid-5.2.0.300\AndroidManifest.xml:20:13-37
+92            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+92-->[com.huawei.hms:hwid:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\7419266a4b321e064c3b332073e0f170\hwid-5.2.0.300\AndroidManifest.xml:21:13-72
+93        </activity> <!-- 切记同步修改 HuaweiIdAuthInternalConstant.HMS_SDK_VERSION -->
+94        <meta-data
+94-->[com.huawei.hms:hwid:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\7419266a4b321e064c3b332073e0f170\hwid-5.2.0.300\AndroidManifest.xml:25:9-27:46
+95            android:name="com.huawei.hms.client.service.name:hwid"
+95-->[com.huawei.hms:hwid:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\7419266a4b321e064c3b332073e0f170\hwid-5.2.0.300\AndroidManifest.xml:26:13-67
+96            android:value="hwid:5.2.0.300" />
+96-->[com.huawei.hms:hwid:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\7419266a4b321e064c3b332073e0f170\hwid-5.2.0.300\AndroidManifest.xml:27:13-43
+97        <meta-data
+97-->[com.huawei.hms:hwid:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\7419266a4b321e064c3b332073e0f170\hwid-5.2.0.300\AndroidManifest.xml:28:9-30:33
+98            android:name="com.huawei.hms.min_api_level:hwid:hwid"
+98-->[com.huawei.hms:hwid:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\7419266a4b321e064c3b332073e0f170\hwid-5.2.0.300\AndroidManifest.xml:29:13-66
+99            android:value="1" /> <!-- 为后续统计第三方app集成了哪些Kit，因此需要Kit在自己的AndroidManifest.xml文件中定义业务标签元数据 -->
+99-->[com.huawei.hms:hwid:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\7419266a4b321e064c3b332073e0f170\hwid-5.2.0.300\AndroidManifest.xml:30:13-30
+100        <meta-data
+100-->[com.huawei.hms:base:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\dd7eec4a0974e5942dbb9d9930696cb0\base-5.2.0.300\AndroidManifest.xml:15:9-17:46
+101            android:name="com.huawei.hms.client.service.name:base"
+101-->[com.huawei.hms:base:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\dd7eec4a0974e5942dbb9d9930696cb0\base-5.2.0.300\AndroidManifest.xml:16:13-67
+102            android:value="base:5.2.0.300" /> <!-- SDK依赖的HMSCore的最低api level元数据 -->
+102-->[com.huawei.hms:base:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\dd7eec4a0974e5942dbb9d9930696cb0\base-5.2.0.300\AndroidManifest.xml:17:13-43
+103        <meta-data
+103-->[com.huawei.hms:base:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\dd7eec4a0974e5942dbb9d9930696cb0\base-5.2.0.300\AndroidManifest.xml:20:9-22:33
+104            android:name="com.huawei.hms.min_api_level:base:hmscore"
+104-->[com.huawei.hms:base:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\dd7eec4a0974e5942dbb9d9930696cb0\base-5.2.0.300\AndroidManifest.xml:21:13-69
+105            android:value="1" /> <!-- 用于判断是否集成了本lib -->
+105-->[com.huawei.hms:base:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\dd7eec4a0974e5942dbb9d9930696cb0\base-5.2.0.300\AndroidManifest.xml:22:13-30
+106        <meta-data
+106-->[com.huawei.hms:availableupdate:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\57e1d0d2eaa712375191be65ba4a4ff9\availableupdate-5.2.0.300\AndroidManifest.xml:21:9-23:35
+107            android:name="availableLoaded"
+107-->[com.huawei.hms:availableupdate:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\57e1d0d2eaa712375191be65ba4a4ff9\availableupdate-5.2.0.300\AndroidManifest.xml:22:13-43
+108            android:value="yes" />
+108-->[com.huawei.hms:availableupdate:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\57e1d0d2eaa712375191be65ba4a4ff9\availableupdate-5.2.0.300\AndroidManifest.xml:23:13-32
+109
+110        <provider
+110-->[com.huawei.hms:availableupdate:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\57e1d0d2eaa712375191be65ba4a4ff9\availableupdate-5.2.0.300\AndroidManifest.xml:25:9-30:20
+111            android:name="com.huawei.hms.update.provider.UpdateProvider"
+111-->[com.huawei.hms:availableupdate:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\57e1d0d2eaa712375191be65ba4a4ff9\availableupdate-5.2.0.300\AndroidManifest.xml:26:13-73
+112            android:authorities="com.huawei.healthkit.demo.hms.update.provider"
+112-->[com.huawei.hms:availableupdate:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\57e1d0d2eaa712375191be65ba4a4ff9\availableupdate-5.2.0.300\AndroidManifest.xml:27:13-71
+113            android:exported="false"
+113-->[com.huawei.hms:availableupdate:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\57e1d0d2eaa712375191be65ba4a4ff9\availableupdate-5.2.0.300\AndroidManifest.xml:28:13-37
+114            android:grantUriPermissions="true" >
+114-->[com.huawei.hms:availableupdate:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\57e1d0d2eaa712375191be65ba4a4ff9\availableupdate-5.2.0.300\AndroidManifest.xml:29:13-47
+115        </provider>
+116
+117        <activity
+117-->[com.huawei.hms:ui:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\d34b0d602fc774817385260893f73a51\ui-5.2.0.300\AndroidManifest.xml:10:9-21:20
+118            android:name="com.huawei.hms.activity.BridgeActivity"
+118-->[com.huawei.hms:ui:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\d34b0d602fc774817385260893f73a51\ui-5.2.0.300\AndroidManifest.xml:11:13-66
+119            android:configChanges="orientation|locale|layoutDirection|fontScale|screenSize|smallestScreenSize|screenLayout|uiMode"
+119-->[com.huawei.hms:ui:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\d34b0d602fc774817385260893f73a51\ui-5.2.0.300\AndroidManifest.xml:12:13-131
+120            android:excludeFromRecents="true"
+120-->[com.huawei.hms:ui:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\d34b0d602fc774817385260893f73a51\ui-5.2.0.300\AndroidManifest.xml:13:13-46
+121            android:exported="false"
+121-->[com.huawei.hms:ui:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\d34b0d602fc774817385260893f73a51\ui-5.2.0.300\AndroidManifest.xml:14:13-37
+122            android:hardwareAccelerated="true"
+122-->[com.huawei.hms:ui:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\d34b0d602fc774817385260893f73a51\ui-5.2.0.300\AndroidManifest.xml:15:13-47
+123            android:screenOrientation="behind"
+123-->[com.huawei.hms:ui:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\d34b0d602fc774817385260893f73a51\ui-5.2.0.300\AndroidManifest.xml:16:13-47
+124            android:theme="@android:style/Theme.Translucent" >
+124-->[com.huawei.hms:ui:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\d34b0d602fc774817385260893f73a51\ui-5.2.0.300\AndroidManifest.xml:17:13-61
+125            <meta-data
+125-->[com.huawei.hms:ui:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\d34b0d602fc774817385260893f73a51\ui-5.2.0.300\AndroidManifest.xml:18:13-20:77
+126                android:name="hwc-theme"
+126-->[com.huawei.hms:ui:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\d34b0d602fc774817385260893f73a51\ui-5.2.0.300\AndroidManifest.xml:19:17-41
+127                android:value="androidhwext:style/Theme.Emui.Translucent" />
+127-->[com.huawei.hms:ui:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\d34b0d602fc774817385260893f73a51\ui-5.2.0.300\AndroidManifest.xml:20:17-74
+128        </activity>
+129        <activity
+129-->[com.huawei.hms:ui:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\d34b0d602fc774817385260893f73a51\ui-5.2.0.300\AndroidManifest.xml:22:9-26:20
+130            android:name="com.huawei.hms.activity.EnableServiceActivity"
+130-->[com.huawei.hms:ui:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\d34b0d602fc774817385260893f73a51\ui-5.2.0.300\AndroidManifest.xml:23:13-73
+131            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout"
+131-->[com.huawei.hms:ui:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\d34b0d602fc774817385260893f73a51\ui-5.2.0.300\AndroidManifest.xml:24:13-106
+132            android:exported="false" >
+132-->[com.huawei.hms:ui:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\d34b0d602fc774817385260893f73a51\ui-5.2.0.300\AndroidManifest.xml:25:13-37
+133        </activity>
+134
+135        <provider
+135-->[com.huawei.agconnect:agconnect-core:1.4.2.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\b988338ca5eae3b628c4ff782713474a\agconnect-core-1.4.2.300\AndroidManifest.xml:11:9-14:40
+136            android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"
+136-->[com.huawei.agconnect:agconnect-core:1.4.2.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\b988338ca5eae3b628c4ff782713474a\agconnect-core-1.4.2.300\AndroidManifest.xml:12:13-90
+137            android:authorities="com.huawei.healthkit.demo.AGCInitializeProvider"
+137-->[com.huawei.agconnect:agconnect-core:1.4.2.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\b988338ca5eae3b628c4ff782713474a\agconnect-core-1.4.2.300\AndroidManifest.xml:13:13-73
+138            android:exported="false" />
+138-->[com.huawei.agconnect:agconnect-core:1.4.2.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\b988338ca5eae3b628c4ff782713474a\agconnect-core-1.4.2.300\AndroidManifest.xml:14:13-37
+139
+140        <service
+140-->[com.huawei.agconnect:agconnect-core:1.4.2.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\b988338ca5eae3b628c4ff782713474a\agconnect-core-1.4.2.300\AndroidManifest.xml:16:9-18:40
+141            android:name="com.huawei.agconnect.core.ServiceDiscovery"
+141-->[com.huawei.agconnect:agconnect-core:1.4.2.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\b988338ca5eae3b628c4ff782713474a\agconnect-core-1.4.2.300\AndroidManifest.xml:17:13-70
+142            android:exported="false" />
+142-->[com.huawei.agconnect:agconnect-core:1.4.2.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\b988338ca5eae3b628c4ff782713474a\agconnect-core-1.4.2.300\AndroidManifest.xml:18:13-37
+143
+144        <activity
+144-->[com.huawei.hms:update:3.0.1.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\740afb4825ad1b2ac27e05b9f2d4ea09\update-3.0.1.300\AndroidManifest.xml:21:9-29:20
+145            android:name="com.huawei.updatesdk.service.otaupdate.AppUpdateActivity"
+145-->[com.huawei.hms:update:3.0.1.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\740afb4825ad1b2ac27e05b9f2d4ea09\update-3.0.1.300\AndroidManifest.xml:22:13-84
+146            android:configChanges="orientation|screenSize"
+146-->[com.huawei.hms:update:3.0.1.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\740afb4825ad1b2ac27e05b9f2d4ea09\update-3.0.1.300\AndroidManifest.xml:23:13-59
+147            android:exported="false"
+147-->[com.huawei.hms:update:3.0.1.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\740afb4825ad1b2ac27e05b9f2d4ea09\update-3.0.1.300\AndroidManifest.xml:24:13-37
+148            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+148-->[com.huawei.hms:update:3.0.1.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\740afb4825ad1b2ac27e05b9f2d4ea09\update-3.0.1.300\AndroidManifest.xml:25:13-72
+149            <meta-data
+149-->[com.huawei.hms:ui:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\d34b0d602fc774817385260893f73a51\ui-5.2.0.300\AndroidManifest.xml:18:13-20:77
+150                android:name="hwc-theme"
+150-->[com.huawei.hms:ui:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\d34b0d602fc774817385260893f73a51\ui-5.2.0.300\AndroidManifest.xml:19:17-41
+151                android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar" />
+151-->[com.huawei.hms:ui:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\d34b0d602fc774817385260893f73a51\ui-5.2.0.300\AndroidManifest.xml:20:17-74
+152        </activity>
+153        <activity
+153-->[com.huawei.hms:update:3.0.1.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\740afb4825ad1b2ac27e05b9f2d4ea09\update-3.0.1.300\AndroidManifest.xml:30:9-38:20
+154            android:name="com.huawei.updatesdk.support.pm.PackageInstallerActivity"
+154-->[com.huawei.hms:update:3.0.1.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\740afb4825ad1b2ac27e05b9f2d4ea09\update-3.0.1.300\AndroidManifest.xml:31:13-84
+155            android:configChanges="orientation|keyboardHidden|screenSize"
+155-->[com.huawei.hms:update:3.0.1.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\740afb4825ad1b2ac27e05b9f2d4ea09\update-3.0.1.300\AndroidManifest.xml:32:13-74
+156            android:exported="false"
+156-->[com.huawei.hms:update:3.0.1.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\740afb4825ad1b2ac27e05b9f2d4ea09\update-3.0.1.300\AndroidManifest.xml:33:13-37
+157            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+157-->[com.huawei.hms:update:3.0.1.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\740afb4825ad1b2ac27e05b9f2d4ea09\update-3.0.1.300\AndroidManifest.xml:34:13-72
+158            <meta-data
+158-->[com.huawei.hms:ui:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\d34b0d602fc774817385260893f73a51\ui-5.2.0.300\AndroidManifest.xml:18:13-20:77
+159                android:name="hwc-theme"
+159-->[com.huawei.hms:ui:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\d34b0d602fc774817385260893f73a51\ui-5.2.0.300\AndroidManifest.xml:19:17-41
+160                android:value="androidhwext:style/Theme.Emui.Translucent" />
+160-->[com.huawei.hms:ui:5.2.0.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\d34b0d602fc774817385260893f73a51\ui-5.2.0.300\AndroidManifest.xml:20:17-74
+161        </activity>
+162
+163        <provider
+163-->[com.huawei.hms:update:3.0.1.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\740afb4825ad1b2ac27e05b9f2d4ea09\update-3.0.1.300\AndroidManifest.xml:40:9-45:20
+164            android:name="com.huawei.updatesdk.fileprovider.UpdateSdkFileProvider"
+164-->[com.huawei.hms:update:3.0.1.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\740afb4825ad1b2ac27e05b9f2d4ea09\update-3.0.1.300\AndroidManifest.xml:41:13-83
+165            android:authorities="com.huawei.healthkit.demo.updateSdk.fileProvider"
+165-->[com.huawei.hms:update:3.0.1.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\740afb4825ad1b2ac27e05b9f2d4ea09\update-3.0.1.300\AndroidManifest.xml:42:13-74
+166            android:exported="false"
+166-->[com.huawei.hms:update:3.0.1.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\740afb4825ad1b2ac27e05b9f2d4ea09\update-3.0.1.300\AndroidManifest.xml:43:13-37
+167            android:grantUriPermissions="true" >
+167-->[com.huawei.hms:update:3.0.1.300] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\740afb4825ad1b2ac27e05b9f2d4ea09\update-3.0.1.300\AndroidManifest.xml:44:13-47
+168        </provider>
+169
+170        <uses-library
+170-->[com.huawei.android.hms:security-ssl:1.1.5.306] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\c5a402c9fd58095052493469b2c7296c\security-ssl-1.1.5.306\AndroidManifest.xml:10:9-12:40
+171            android:name="org.apache.http.legacy"
+171-->[com.huawei.android.hms:security-ssl:1.1.5.306] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\c5a402c9fd58095052493469b2c7296c\security-ssl-1.1.5.306\AndroidManifest.xml:11:13-50
+172            android:required="false" />
+172-->[com.huawei.android.hms:security-ssl:1.1.5.306] C:\Users\panag\.gradle\caches\transforms-2\files-2.1\c5a402c9fd58095052493469b2c7296c\security-ssl-1.1.5.306\AndroidManifest.xml:12:13-37
+173    </application>
+174
+175</manifest>
